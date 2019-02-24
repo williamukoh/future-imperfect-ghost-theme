@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Base Meta --}}
+    <title>William Ukoh's Blog — Coming Soon.</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="//fonts.googleapis.com/css?family=Nunito+Sans:400,600" rel="stylesheet">
+
+    <style>
+        html,body { 
+            background-color: #F5F5F5; 
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; 
+            text-align: center;
+        }
+        .site-wrapper {
+            font-family: "Nunito Sans";
+            font-size: 1.4em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }      
+        img { display:block; margin:1em auto; }
+    </style>
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{!-- {{ghost_head}} --}}
+
+</head>
+<body class="{{body_class}}">
+
+    <div class="site-wrapper">
+
+        Thanks for your interest. Blog should be back online soon.
+        <img src="{{asset 'img/gear-loading-v2.gif'}}" />
+
+    </div>
+
+
+    {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
+    {{ghost_foot}}
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-602563-34']);
+        _gaq.push(['_setDomainName', '.williamukoh.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+</body>
+</html>
